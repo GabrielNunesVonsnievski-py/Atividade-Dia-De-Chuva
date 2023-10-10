@@ -1,3 +1,8 @@
+Alunos: Gabriel Nunes Vonsnievski
+Sala:2137
+Curso: Informática 2 fase
+------------------------------------------------------------------------------------------------------------------------------
+
 x0 = [0,1,2]
 x1 = [0,1,2]
 x2 = [0,1,2]
@@ -77,6 +82,59 @@ while True:
             print("O é o vencedor!!")
         elif x0[2] == "O" and x1[1] == "O" and x2[0] == "O":
             print("O é o vencedor!!")
+
+===================================================================================================================================
+
+
+
+
+Alunos: Eduardo Marchioli De Bona
+Sala:2137
+Curso: Informática 2 fase
+-----------------------------------------------------------------------------------------------------------------------------------
+
+palavra = ["d", "o", "c", "e"]
+tentativas = 0
+conttentativas = 0
+letrascorretas = []
+
+while tentativas <= 7 :
+    letra = input(f'Digite uma letra: ')
+
+    for i in palavra:
+        if letra == i:
+            print(f'está letra faz parte da palavra!!!!!!!!!')   
+            letrascorretas.append(i) 
+            print(letrascorretas)
+            break
+
+        elif letra != "d" and letra != "o" and letra != "c" and letra != "e":
+            print(f'está letra não faz parte da palavra') 
+            conttentativas = conttentativas + 1 
+            print(conttentativas)
+
+            if conttentativas == 1:
+                print(" O ")
+
+            elif conttentativas == 2:
+                print(" O \n | ")
+                
+            elif conttentativas == 3:
+                print(" O \n |\ ")
+                
+            elif conttentativas == 4:
+                print(" O \n /|\ ")
+               
+            elif conttentativas == 5:
+                print(" O \n /|\ \n  |")
+               
+            elif conttentativas == 6:
+                print(" O \n /|\ \n  | \n /")
+            
+            elif conttentativas == 7:
+                print(" O \n /|\ \n  | \n /\\")
+                print("Vc perdeu!")
+
             
         
         
